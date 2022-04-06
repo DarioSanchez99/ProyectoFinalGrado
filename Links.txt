@@ -1,1 +1,3 @@
 https://www.youtube.com/watch?v=abJh05NqM_o  --->Subir juego a la pagina web
+https://codingpotions.com/angular-login-sesion --->Login Angular
+https://gamedevtraum.com/es/desarrollo-de-videojuegos/tutoriales-y-soluciones-unity/menu-de-seleccion-de-personaje-asset-para-descargar/ --->menú selección personaje
