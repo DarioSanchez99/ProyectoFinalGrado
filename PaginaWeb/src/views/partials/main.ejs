@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Darío</title>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <% if (!user) { %>
+  <a href="/login">Loguearse</a>
+  <a href="/register">Registrarse</a>
+  <% } else { %>
+  <a href="/logout">Logout</a>
+  <a href="/profile">Profile</a>
+  <% } %>
+
+  <%if (signinMessage) {%>
+    <p><%= signinMessage %></p>
+  <% } %>
+  <%if (signupMessage) {%>
+    <p><%= signupMessage %></p>
+  <% } %>
+
+  <%- body %>
+</body>
+</html>
