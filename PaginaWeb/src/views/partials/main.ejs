@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pagina Darío</title>
-</head>
-<body>
-  <!-- NAVIGATION -->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <body>
+      <nav class="navbar navbar-dark bg-primary">
   <% if (!user) { %>
   <a href="/login">Loguearse</a>
   <a href="/register">Registrarse</a>
@@ -20,7 +20,9 @@
   <%if (signupMessage) {%>
     <p><%= signupMessage %></p>
   <% } %>
-
+  <br>
+      </nav>
   <%- body %>
 </body>
 </html>
+
