@@ -39,7 +39,8 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/', require('./routes'));
-
+//Archivos dinamicos
+app.use(express.static(path.join(__dirname,'public')));
 // Starting the server
 app.listen(app.get('port'), () => {
   console.log('server on port', app.get('port'));
