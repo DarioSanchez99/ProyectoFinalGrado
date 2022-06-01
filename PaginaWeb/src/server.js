@@ -30,8 +30,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use((req, res, next) => {
-  app.locals.signinMessage = req.flash('signinMessage');
-  app.locals.signupMessage = req.flash('signupMessage');
+  app.locals.loginMessage = req.flash('loginMessage');
+  app.locals.registerMessage = req.flash('registerMessage');
   app.locals.user = req.user;
   console.log(app.locals)
   next();
