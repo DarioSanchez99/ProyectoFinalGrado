@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 
-    <body>
+<body background="imagenes/fondo.png">
 <nav class="navbar navbar-dark bg-dark">
   <% if (!user) { %>
   <div class="btn-group">
   <img src="imagenes/LogoJuego.png">
+  <a href="/" class="btn btn-dark"><h3>Inicio</h3></a>
   <a href="/login" class="btn btn-dark"><h3>Login</h3></a>
   <a href="/register" class="btn btn-dark"><h3>Registrarse</h3></a>
   </div>
   <% } else { %>
     <div class="btn-group">
       <img src="imagenes/LogoJuego.png">
+      <a href="/" class="btn btn-dark"><h3>Inicio</h3></a>
       <a href="/logout" class="btn btn-dark"><h3>Cerrar sesión</h3></a>
       <a href="/profile" class="btn btn-dark"><h3>Juego</h3></a>
       </div>
