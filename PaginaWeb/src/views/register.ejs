@@ -1,13 +1,23 @@
-<%- layout('partials/main')%>
-<form action="/register" method="POST" class="px-4 py-3">
-  <div class="mb-3">
-    <label for="exampleDropdownFormEmail1" class="form-label">Email </label>
-    <input type="email" name ="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@ejemplo.com">
+<%- layout('partials/main') %>
+<style type="text/css">
+  .register{
+  min-height: 150px;
+  width: 300px ; 
+  margin: 0 auto;
+  text-align:center;
+  }
+</style>
+<div class="register">
+      <form action="/register" method="POST" class="px-4 py-3">
+        <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" height="250px" width="250px">
+        <div class="mb-3">
+          <input type="email" name ="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <input type="password" name="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+        </div>
+        <div class="mb-3">
+        <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+        </div>
+      </form>
   </div>
-  <div class="mb-3">
-    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-    <input type="password" name="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-  </div>
-  <div class="mb-3">
-  <button type="submit" class="btn btn-dark">Iniciar sesión</button>
-</form>

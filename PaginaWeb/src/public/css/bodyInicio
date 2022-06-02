@@ -1,5 +1,0 @@
-p {
-  background-color: #000000;
-  background-image: url("/src/public/imagenes/fondo.png");
-  background-repeat: no-repeat;
-}
