@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JohnMovement : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class JohnMovement : MonoBehaviour
     private Rigidbody2D Rigidbody2D;
     private Animator Animator;
     private float Horizontal;
+    private float Vertical;
     private bool Grounded;
     private float LastShoot;
     private int Health = 5;
+
 
     private void Start()
     {
@@ -25,6 +28,8 @@ public class JohnMovement : MonoBehaviour
     {
         // Movimiento
         Horizontal = Input.GetAxisRaw("Horizontal");
+
+
 
         if (Horizontal < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         else if (Horizontal > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -51,6 +56,7 @@ public class JohnMovement : MonoBehaviour
             Shoot();
             LastShoot = Time.time;
         }
+        
     }
 
     private void FixedUpdate()
@@ -77,5 +83,7 @@ public class JohnMovement : MonoBehaviour
     {
         Health -= 1;
         if (Health == 0) Destroy(gameObject);
+        if (Health == 0) SceneManager.LoadScene("EscenaMenu");
+
     }
 }
