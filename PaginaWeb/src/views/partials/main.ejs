@@ -22,7 +22,8 @@
       <img src="imagenes/LogoJuego.png">
       <a href="/" class="btn btn-dark"><h3>Inicio</h3></a>
       <a href="/logout" class="btn btn-dark"><h3>Cerrar sesión</h3></a>
-      <a href="/profile" class="btn btn-dark"><h3>Juego</h3></a>
+      <a href="/profile" class="btn btn-dark"><h3>Perfil</h3></a>
+      <a href="https://dario1999.itch.io/jojojambodariosanchez" class="btn btn-dark" target="_blank"><h3>juego</h3></a>
       </div>
   <% } %>
 
@@ -30,7 +31,7 @@
   </nav>
   <%- include('./fondo.ejs'); %>
   <%- body %>
-  <br>
+  <%- include('./alerts.ejs'); %>
   <%- include('./footer.ejs'); %>
 </body>
 </html>
