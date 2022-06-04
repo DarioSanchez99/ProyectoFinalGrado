@@ -20,7 +20,7 @@ public class GruntScript : MonoBehaviour
 
         float distance = Mathf.Abs(John.position.x - transform.position.x);
 
-        if (distance < 1.0f && Time.time > LastShoot + 0.25f)
+        if (distance < 1.0f && Time.time > LastShoot + 1f)
         {
             Shoot();
             LastShoot = Time.time;
@@ -32,6 +32,7 @@ public class GruntScript : MonoBehaviour
         Vector3 direction = new Vector3(transform.localScale.x, 0.0f, 0.0f);
         GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<BulletScript>().SetDirection(direction);
+
     }
 
     public void Hit()
